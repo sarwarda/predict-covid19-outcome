@@ -1,1 +1,0 @@
-# predict-covid19-outcome
