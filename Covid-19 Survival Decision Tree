@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="mean_arterial_pressure <= 67.5\nentropy = 0.804\nsamples = 2922\nvalue = [2205, 717]\nclass = 0", fillcolor="#edaa79"] ;
+1 [label="age <= 60.5\nentropy = 0.75\nsamples = 340\nvalue = [73, 267]\nclass = 1", fillcolor="#6fb8ec"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="C_reactive_protein <= 19.9\nentropy = 0.998\nsamples = 76\nvalue = [36, 40]\nclass = 1", fillcolor="#ebf5fc"] ;
+1 -> 2 ;
+3 [label="entropy = 0.949\nsamples = 49\nvalue = [31, 18]\nclass = 0", fillcolor="#f4caac"] ;
+2 -> 3 ;
+4 [label="entropy = 0.691\nsamples = 27\nvalue = [5, 22]\nclass = 1", fillcolor="#66b3eb"] ;
+2 -> 4 ;
+5 [label="length_of_stay <= 0.5\nentropy = 0.585\nsamples = 264\nvalue = [37, 227]\nclass = 1", fillcolor="#59ade9"] ;
+1 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 5\nvalue = [5, 0]\nclass = 0", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="entropy = 0.539\nsamples = 259\nvalue = [32, 227]\nclass = 1", fillcolor="#55abe9"] ;
+5 -> 7 ;
+8 [label="age <= 58.5\nentropy = 0.667\nsamples = 2582\nvalue = [2132, 450]\nclass = 0", fillcolor="#ea9c63"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="procalcitonin <= 0.75\nentropy = 0.334\nsamples = 909\nvalue = [853, 56]\nclass = 0", fillcolor="#e78946"] ;
+8 -> 9 ;
+10 [label="entropy = 0.225\nsamples = 773\nvalue = [745, 28]\nclass = 0", fillcolor="#e68640"] ;
+9 -> 10 ;
+11 [label="entropy = 0.734\nsamples = 136\nvalue = [108, 28]\nclass = 0", fillcolor="#eca26c"] ;
+9 -> 11 ;
+12 [label="procalcitonin <= 0.85\nentropy = 0.787\nsamples = 1673\nvalue = [1279, 394]\nclass = 0", fillcolor="#eda876"] ;
+8 -> 12 ;
+13 [label="entropy = 0.715\nsamples = 1405\nvalue = [1129, 276]\nclass = 0", fillcolor="#eba069"] ;
+12 -> 13 ;
+14 [label="entropy = 0.99\nsamples = 268\nvalue = [150, 118]\nclass = 0", fillcolor="#f9e4d5"] ;
+12 -> 14 ;
+}
